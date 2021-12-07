@@ -1,0 +1,117 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.order{
+  padding: 50px 15px;
+  background-color: $light-grey;
+
+  @include for-large-up{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 73px 0 68px 0;
+
+    &__details{
+      margin-top: 33px;
+      max-width: 555px;
+    }
+
+    &__illustration{
+      margin-right: 121px;
+      max-width: 269px;
+    }
+  
+  }
+
+  &__illustration-centered{
+    margin: 0;
+    text-align: center;
+  }
+
+  &__illustration{
+
+    @include for-large-down{
+      max-width: 200px;
+    }
+
+    @include for-large-up{
+      margin-top: 0;
+    }
+  }
+
+  &__title{
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.25px;
+
+    @include for-large-up{
+      margin-top: 0;
+      text-align: start;
+    }
+  }
+
+
+  &__text{
+    margin: 0;
+    margin-top: 18px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &__form{
+    @include for-large-up{
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+
+  &__email{
+    margin-top: 40px;
+    width: 100%;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #2b292d33;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+
+    &::placeholder{
+      color: $text-standart-color;
+    }
+
+    @include for-large-up{
+      margin-top: 0;
+    }
+  }
+
+  &__button{
+    margin-top: 12px;
+
+    @include for-large-down{
+      width: 100%;
+    }
+
+    @include for-large-up{
+      margin-top: 0;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__terms{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+  }
+
+  &__terms-link{
+    color: $button-color;
+  }
+}

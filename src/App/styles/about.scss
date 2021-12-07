@@ -1,0 +1,42 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.about {
+  padding: 46px 15px;
+  width: 100%;
+  background-color: $light-grey;
+
+  @include for-large-up {
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px 130px;
+  }
+}
+
+.article {
+  &:last-child {
+    margin-top: 20px;
+
+    @include for-large-up {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &__text {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @include for-large-up {
+    width: 555px;
+  }
+}

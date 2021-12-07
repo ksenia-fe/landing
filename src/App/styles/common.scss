@@ -1,0 +1,32 @@
+@import 'breakpoints.scss';
+
+.action-button{
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 2px;
+}
+
+
+
+  .hide_desktop{
+    @include for-large-up {
+      display: block;
+    }
+  }
+  .action-button_mobile{
+    @include for-large-up {
+      width: 160px;
+    }
+  }
+
+
+  .hide_mobile{
+    @include for-large-up {
+      display: none;
+    }
+  }

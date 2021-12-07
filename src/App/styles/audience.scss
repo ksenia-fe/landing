@@ -1,0 +1,156 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.audience{
+  margin: auto;
+  padding: 50px 15px;
+  width: 100%;
+  background-color: $dark-blue;
+
+  @include for-large-up {
+    padding: 0 130px 77px 133px;
+    width: 100%;
+  }
+}
+
+.audience-info{
+  display: flex;
+  flex-direction: column;
+
+  &__subtitle{
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+  
+  &__title{
+    margin: 0;
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 24px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+  
+  &__description{
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 30px;
+      margin-bottom: 34px;
+    }
+  }
+  
+  &__actions{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+
+    @include for-large-up {
+      flex-direction: row;
+    }
+  }
+
+  @include for-large-up {
+    display: flex;
+    flex-direction: column;
+    margin: 108px auto 0 auto;
+    width: 555px;
+  }
+}
+
+.learn-more-btn{
+  margin-top: 12px;
+  width: 290px;
+  height: 48px;
+  background-color: $standart-backround-color;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 18px;
+
+  @include for-large-up {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 158px;
+  }
+}
+
+.action-button_mobile{
+  width: 290px;
+
+  @include for-large-up {
+    margin-top: 0px;
+    width: 160px;
+  }
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px auto 0 auto;
+
+  @include for-large-up {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 111px auto 110px auto;
+  }
+
+  &__user-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    background-color: $standart-backround-color;
+    box-shadow: 0px 1px 3px #0000001a, 0px 4px 6px #0000000d, inset 0px 1px 0px #ffffff1a;
+    border-radius: 8px;
+  
+    &:hover{
+      background-color: $blue;
+    }
+  
+    &:hover &-name{
+      color: $standart-backround-color;
+    }
+    
+    &-icon{
+      margin-top: 22px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    
+    &-name{
+      margin-top: 18px;
+      margin-bottom: 33px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    @include for-large-up {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      width: 262px;
+      background-color: $standart-backround-color;
+      box-shadow: 0px 1px 3px #0000001a, 0px 4px 6px #0000000d, inset 0px 1px 0px #ffffff1a;
+      border-radius: 8px;
+    }
+  }
+}

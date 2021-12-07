@@ -1,0 +1,128 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.header{
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 64px;
+  width: 100%;
+  background-color: $header-background-color;
+
+  @include for-large-up {
+    display: flex;
+    margin: auto;
+    width: 1140px;
+    height: 62px;
+  }
+
+  &__button{
+    display: none;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+  
+  &__menu-button{
+    border: none;
+    margin-left: auto;
+    width: 58px;
+    border-left: 1px solid #00000026;
+    height: 100%;
+    background-color: transparent;
+
+    @include for-large-up {
+      display: none;
+    }
+  }
+  
+  &__menu-icon{
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+  }
+}
+
+.navigation{
+  display: none;
+
+  &__item{
+    margin-right: 50px;
+    color: $text-standart-color;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  &__item_selected{
+    font-weight: 700;
+  }
+  
+  &__item:last-child{
+    margin-right: 0;
+  }
+  
+  &__arrow{
+    display: inline-block;
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+    // background-image: url(img/Arrow.png);
+  }
+
+  @include for-large-up {
+    display: block;
+    margin-left: auto;
+    margin-right: 75px;
+    margin-top: 7px;
+  }
+}
+
+.top-section{
+  background-color: $header-background-color;
+
+  @include for-large-up {
+    padding-top: 39px;
+  }
+}
+
+.logo{
+ display: flex;
+
+ &__image{
+  margin-right: 13px;
+  width: 48px;
+  height: 48px;
+
+  @include for-large-up {
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+&__name{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+&__description{
+  display: none;
+
+  @include for-large-up {
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-standart-color;
+    opacity: 0.6;
+  }
+}
+
+&__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+}

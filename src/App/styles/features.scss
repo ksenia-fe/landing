@@ -1,0 +1,99 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+
+.features{
+  display: flex;
+  position: relative;
+
+  &__content{
+    display: flex;
+    margin: auto;
+    width: 1140px;
+  }
+  
+  &__column{
+    width: 462px;
+  }
+  
+  &__subtitle{
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #009B4D;
+  }
+  
+  &__title{
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+  
+  &__description{
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 461px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  &__advantage-header{
+    display: flex;
+    margin-top: 42px;
+    line-height: 42px;
+  }
+  
+  &__advantage-title{
+    margin: 0;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: $text-color-blue;
+  }
+  
+  &__advantage-description{
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    width: 459px;
+    font-size: 18px;
+    line-height: 26px;
+    border-bottom: 3px solid $text-color-blue;
+  }
+  
+  &__advantage-item{
+    display: flex;
+    margin-top: 21px;
+    padding-bottom: 22px;
+    width: 457px;
+    border-bottom: 1px solid #2b292d26;
+  }
+  
+  &__advantage-item-text{
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  &_left-decoration{
+    position: absolute;
+    top: 258px;
+    height: 166px;
+  }
+  
+  &__banner{
+    position: absolute;
+    right: 0;
+  }
+  
+
+  @include for-large-down {
+    display: none;
+  }
+}
