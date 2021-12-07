@@ -23,10 +23,10 @@ function App() {
                 <a href="#" className="navigation__item navigation__item_selected">Home</a>
                 <a href="#" className="navigation__item">Stories</a>
                 <a href="#" className="navigation__item"
-                  >Library<img
+                >Library<img
                     className="navigation__arrow"
                     src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png"
-                /></a>
+                  /></a>
               </nav>
               <button className="header__button action-button">Get Started</button>
               <button className="header__menu-button"><span className="header__menu-icon"></span></button>
@@ -477,21 +477,30 @@ function App() {
                 <a href="#" className="terms__item">License</a>
               </nav>
               <div className="social-links">
-                <a className="social-links__item" href="https://twitter.com" target="_blank"
-                  ><img
+                <a
+                  className="social-links__item"
+                  href="https://twitter.com">
+                  <img
                     src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png"
                     alt="Twiter link"
-                /></a>
-                <a className="social-links__item" href="https://facebook.com" target="_blank"
-                  ><img
+                  />
+                </a>
+                <a
+                  className="social-links__item"
+                  href="https://facebook.com">
+                  <img
                     src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png"
                     alt="Facebook link"
-                /></a>
-                <a className="social-links__item" href="https://linkedin.com" target="_blank"
-                  ><img
+                  />
+                </a>
+                <a
+                  className="social-links__item"
+                  href="https://linkedin.com">
+                  <img
                     src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png"
                     alt="linkedIn link"
-                /></a>
+                  />
+                </a>
               </div>
             </div>
           </footer>
