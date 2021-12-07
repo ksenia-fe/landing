@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 
+// TODO add React components
 function App() {
   return (
     <div className="App">
